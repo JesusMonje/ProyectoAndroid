@@ -48,9 +48,13 @@ De momento solo he jugado con estos porque es lo que se pide, pero también hay 
 Bien, una vez definidos los TextView en el XML es fundamental cambiarles los nombres de sus ID´S a los que están en el documento. En este caso serían:
 
 "
+
         xAceleraVisor = findViewById<TextView>(R.id.xAceleraView)
+        
         yAceleraVisor = findViewById<TextView>(R.id.yAceleraView)
+        
         zAceleraVisor = findViewById<TextView>(R.id.zAceleraView)
+        
 
         xGyroVisor = findViewById<TextView>(R.id.idXGyro)
         yGyroVisor = findViewById<TextView>(R.id.idYGyro)
