@@ -67,8 +67,11 @@ Bien, una vez definidos los TextView en el XML es fundamental cambiarles los nom
 Basicamente todo lo que va después del "id." pues así tenemos que configurarlo, para que salga todo correcto y todo bien en el XML. Por ejemplo, si el TextView 1 se llama "textView" nosotros lo cambiaremos a "xAceleraView" porque es donde se verá reflejado el eje X del Acerelometro. Básico. 
 
  Luego definiremos un archivo de audio, que será el que usaremos cuando se produzcan dos eventos:
-       1) La distancia hacia el sensor de proximidad es 0-
+ 
+       1) La distancia hacia el sensor de proximidad es 0.
+       
        2) La luminosidad es 150.
+       
         
   Se define el media player en este caso asi:
         
