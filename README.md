@@ -79,6 +79,7 @@ Basicamente todo lo que va después del "id." pues así tenemos que configurarlo
         
    Basicamente como en el apartado 2.
     Luego de esos vereis varias funciones del sensor Manager que es muy sencillo. Aunque parezca complejo, tranquilidad, os lo voy explicando paso por paso con el giroscopio:
+        
         "
         var sensorManager: SensorManager = getSystemService(Context.SENSOR_SERVICE)
                 as SensorManager"
@@ -94,7 +95,8 @@ Basicamente todo lo que va después del "id." pues así tenemos que configurarlo
             )
         }"
         
-    Como vereis lo que hay que hacer es declarar un sensorManager primero, para indicar el objeto que se usará, que emulando lo que hicimos antes con el mediaplayer y el audio del sistema, será un servicio del sistema llamada "SENSOR_SERVICE" que sería los sensores del dispositivo, sin especificar, porque eso lo haremos ahora.
+        
+ Como vereis lo que hay que hacer es declarar un sensorManager primero, para indicar el objeto que se usará, que emulando lo que hicimos antes con el mediaplayer y el audio del sistema, será un servicio del sistema llamada "SENSOR_SERVICE" que sería los sensores del dispositivo, sin especificar, porque eso lo haremos ahora.
         
   Bien, luego viene el "sensorManger.getDeafult..." con eso lo que hacemos es definir nuestro sensorManager que actualmente no está especificado en un Giroscopio, de ahí el "TYPE_GYROSCOPE". Sencillo. 
         
@@ -122,9 +124,10 @@ Ahora se viene lo interesante, tras la función macarena viene el como funciona 
             xAceleraVisor.setText("x:"+x_acel)
             yAceleraVisor.setText("y:"+y_acel)
             zAceleraVisor.setText("z:"+z_acel)
-"
-      
-    Bien, este es el comienzo de varios if´s, que es donde están desarollados los cambios. Como vereis hacemos 3 variables, las cuales son arrays de float. Esto se debe al "events.values[]" que lo que hace es darte la posición de lo que va pillando.
+""
+ 
+ 
+ Bien, este es el comienzo de varios if´s, que es donde están desarollados los cambios. Como vereis hacemos 3 variables, las cuales son arrays de float. Esto se debe al "events.values[]" que lo que hace es darte la posición de lo que va pillando.
    
 Simplemente ahora hacemos una llamada a nuestros TextView del XML y les decimos que pongan en su texto, los valores que aparezcan.  Y ya estaría, tenemos en nuestros 3 TextView los 3 valores. 
         
