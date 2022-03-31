@@ -78,9 +78,7 @@ Basicamente todo lo que va después del "id." pues así tenemos que configurarlo
         "  mediaPlayer = MediaPlayer.create(this,R.raw.miau)"
         
    Basicamente como en el apartado 2.
- 
     Luego de esos vereis varias funciones del sensor Manager que es muy sencillo. Aunque parezca complejo, tranquilidad, os lo voy explicando paso por paso con el giroscopio:
-        
         "
         var sensorManager: SensorManager = getSystemService(Context.SENSOR_SERVICE)
                 as SensorManager"
@@ -95,6 +93,7 @@ Basicamente todo lo que va después del "id." pues así tenemos que configurarlo
                 SensorManager.SENSOR_DELAY_FASTEST
             )
         }"
+        
     Como vereis lo que hay que hacer es declarar un sensorManager primero, para indicar el objeto que se usará, que emulando lo que hicimos antes con el mediaplayer y el audio del sistema, será un servicio del sistema llamada "SENSOR_SERVICE" que sería los sensores del dispositivo, sin especificar, porque eso lo haremos ahora.
         
   Bien, luego viene el "sensorManger.getDeafult..." con eso lo que hacemos es definir nuestro sensorManager que actualmente no está especificado en un Giroscopio, de ahí el "TYPE_GYROSCOPE". Sencillo. 
