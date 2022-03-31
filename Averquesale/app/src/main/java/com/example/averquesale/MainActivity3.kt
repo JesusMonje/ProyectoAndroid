@@ -180,6 +180,9 @@ class MainActivity3 : AppCompatActivity(), SensorEventListener {
         }else if (event?.sensor?.type == Sensor.TYPE_LIGHT){
 
             var luminosidad = event.values[0]
+               if (luminosidad == 150.0f){
+                mediaPlayer?.start()
+            }
 
             luzAmbientalVisor.setText(""+ luminosidad)
 
